@@ -1,0 +1,10 @@
+<launch>
+
+<!-- MoveBaseSeq node launch and Points Sequence ROS Parameters Loading -->
+
+    <!--Run move_base_seqs node-->
+        <node pkg="navgo_path" type="move2_file.py" name="move_base_seq" output="screen">
+            <rosparam file="$(find navgo_path)/path/path1.yaml"/>
+        </node>
+
+</launch>
